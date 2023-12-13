@@ -1,0 +1,4 @@
+@for (product of products; track $index) {
+<app-product [sanpham]="product" (onBuyOnce)="buyProduct($event)" (onDelete)="deleteProduct($event)"
+  (onBuyAll)="buyAllProduct($event)"></app-product>
+}

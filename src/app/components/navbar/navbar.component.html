@@ -1,0 +1,12 @@
+<div class="navbar">
+  @if (isLogged === false) {
+  <div class="button-container">
+    <button (click)="login()">Login</button>
+  </div>
+  }@else {
+  <div class="button-container">
+    <button (click)="logout()">Logout</button>
+    <img [src]='imageUrl' alt="">
+  </div>
+  }
+</div>
