@@ -1,19 +1,30 @@
-.main {
-  height: 100%;
-  width: 100%;
-}
-
 .item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  height: 200px;
+  width: 100%;
+
   margin: 50px;
-  font-size: 30px;
+  font-size: 20px;
+
+  border-radius: 10px;
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0px 2px 2px rgb(200, 200, 200);
+}
+
+.text {
+  margin: 20px 0px 0px 30px;
+}
+
+.button-container {
+  margin: 30px 0px 0px 8px;
 }
 
 button {
   margin-left: 10px;
-  width: 60px;
-  height: 35px;
+  width: 55px;
+  height: 30px;
 
   border: none;
   border-radius: 10px;

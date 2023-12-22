@@ -1,9 +1,12 @@
-<div class="main">
-  <div class="item">
-    STT: {{sanpham.id}} - Tên sản phẩm: {{sanpham.name}} - Giá tiền: {{sanpham.price}} - Số lượng: {{sanpham.quantity}}
+<div class="item">
+  <div class="text">Tên sản phẩm: {{product.name}}</div>
+  <div class="text">Giá tiền: {{product.price}}$</div>
+  <div class="text">Số lượng: {{product.quantity}}</div>
 
+  <div class="button-container">
     <button (click)="buyOnce()">Buy</button>
     <button (click)="deleteOnce()">Delete</button>
     <button (click)="buyAll()">Buy All</button>
+    <button (click)="onDetail.emit()">Detail</button>
   </div>
 </div>

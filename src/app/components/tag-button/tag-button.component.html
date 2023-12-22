@@ -1,0 +1,12 @@
+<div class="tagButtons-container">
+  @for (item of ['Clothes', 'Furniture', 'Book', 'Tool']; track $index) {
+  <span>
+    <ng-container [ngTemplateOutlet]="tagButtons" [ngTemplateOutletContext]="{name: item}">
+    </ng-container>
+  </span>
+  }
+</div>
+
+<ng-template #tagButtons let-btnName="name">
+  <button class="tagButtons">{{btnName}}</button>
+</ng-template>

@@ -1,0 +1,7 @@
+<div class="item-list">
+  @for (product of products; track $index) {
+  <app-product [product]="product" (onBuyOnce)="buyProduct($event)" (onDelete)="deleteProduct($event)"
+    (onBuyAll)="buyAllProducts($event)" (onDetail)="viewDetail(product.id)">
+  </app-product>
+  }
+</div>
